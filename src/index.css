@@ -1,13 +1,220 @@
+
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: #ebf2f6;
+  margin:0;
+  
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+
+.weather-card-today {
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  width: 500px;
+  height: 270px;
+  background: #3DB8ED;
+  box-shadow: 0px 0px 25px 1px rgba(50, 50, 50, 0.1);
+  animation: appear 500ms ease-out forwards;
 }
+.weather-card-today h1 {
+  position: absolute;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 80px;
+  color: white;
+  left: 35px;
+  top:55px;
+  opacity: 0;
+  transition: translatex(150px);
+  animation: title-appear 500ms ease-out  500ms forwards;
+  
+}
+.weather-card-today p {
+  position: absolute;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 28px;
+  color: #423232;
+  bottom: 0;
+  left: 35px;
+  top: 18px;
+  animation: title-appear 500ms ease-out  500ms forwards;
+}
+.weather-card-today .data1 {
+  position: absolute;
+  display: block;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  color: #F91313;
+  left: 35px;
+  top: 160px;
+  animation: title-appear 500ms ease-out  500ms forwards;
+}
+
+.weather-card-today .data2 {
+  position: absolute;
+  display: block;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  color: white;
+  left: 35px;
+  top: 184px;
+  animation: title-appear 500ms ease-out  500ms forwards;
+}
+.weather-card-today .data3 {
+  position: absolute;
+  display: block;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  color: white;
+  left: 35px;
+  top: 208px;
+  animation: title-appear 500ms ease-out  500ms forwards;
+}
+
+.ico1{
+  position: relative;
+  width: 235px;
+  height: 235px;
+  top: -2px;
+  left: 30px;
+  float: right;
+  margin: 10px 10px
+}
+
+@media only screen and (max-width: 400px) {
+    .ico1{
+      position: relative;
+      width: 155px;
+      height: 155px;
+      top: 15px;
+      left: 20px;
+      float: right;
+      margin: 10px 10px;      
+  }
+
+  .weather-card-today h1 {
+    position: absolute;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 55px;
+    color: white;
+    left: 35px;
+    top:75px;
+    opacity: 0;
+    transition: translatex(150px);
+    animation: title-appear 500ms ease-out  500ms forwards;
+    
+  }
+
+}
+.weather-card {
+ 
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  width: 270px;
+  height: 270px;
+  background: white;
+  box-shadow: 0px 0px 25px 1px rgba(50, 50, 50, 0.1);
+  animation: appear 500ms ease-out forwards;
+}
+
+.weather-card p {
+  position: absolute;
+  text-transform: capitalize;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 28px;
+  color: #423232;
+  bottom: 0;
+  left: 35px;
+  top: 18px;
+  animation: title-appear 500ms ease-out  500ms forwards;
+}
+.weather-card .data1 {
+  position: absolute;
+  display: block;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  color: #F91313;
+  left: 35px;
+  top: 160px;
+  animation: title-appear 500ms ease-out  500ms forwards;
+}
+
+.weather-card .data2 {
+  position: absolute;
+  display: block;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  color: #d2d2d2;
+  left: 35px;
+  top: 184px;
+  animation: title-appear 500ms ease-out  500ms forwards;
+}
+.weather-card .data3 {
+  position: absolute;
+  display: block;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  color: #d2d2d2;
+  left: 35px;
+  top: 208px;
+  animation: title-appear 500ms ease-out  500ms forwards;
+}
+
+.ico{
+  position: relative;
+  width: 150px;
+  height: 150px;
+  top: 20px;
+  right:45px ;
+  float: right;
+  margin: 10px 10px
+
+}
+@keyframes appear {
+  0% {
+      transform: scale(0);
+  }
+  50% {
+      transform: scale(1.05);
+  }
+  75% {
+      transform: scale(0.95);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+@keyframes title-appear {
+  from {
+      opacity: 0;
+      transform: translateX(150px);
+  }
+  to {
+      opacity: 1;
+      transform: translateX(0px);
+  }
+}
+@keyframes light {
+  from {
+      box-shadow: rgba(255, 255, 0,0.2) 0 0 0 10px;
+  }
+  to {
+      box-shadow: rgba(255, 255, 0,0.2) 0 0 0 17px;
+  }
+}
+

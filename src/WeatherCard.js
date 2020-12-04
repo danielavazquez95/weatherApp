@@ -3,16 +3,14 @@ import { getIcons } from './getIcons';
 import moment from 'moment';
 import 'moment/locale/es';
 
-
 export const WeatherCard = ({data}) => {
 
-    console.log('la data viejaaaa',data);
-    console.log('data.temp_max',data.main.temp_max);
     moment.locale('es');
+
     return (
        
             <div className="weather-card my-3 mx-2">
-            <img  className="ico" src={getIcons(data.weather[0].main)} alt="Card" />
+                <img  className="ico" src={getIcons(data.weather[0].main)} alt="Card" />
                
                 <p> {moment(data.dt_txt.slice(0,10)).format('dddd')} </p>
                 <span className="data1">Min: {data.main.temp_min}° / Max: {data.main.temp_max}°</span>

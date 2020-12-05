@@ -10,7 +10,7 @@ export const WeatherCardToday = ({data,temp}) => {
 
     return (
         <div className="weather-card-today my-3 mx-2">
-            <img  className="ico1" src={getIcons(data.main)} alt="Card" />
+            <img  className="ico1" src={process.env.PUBLIC_URL + getIcons(data.main)} alt="Card" />
             <h1>{data.temp}°</h1>
             <p>{data.name}</p>
             <span className="data1"> Min: {minTempToday}° / Max: {maxTempToday}°</span>

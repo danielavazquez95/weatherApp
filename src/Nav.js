@@ -14,7 +14,7 @@ export const Nav = (props) => {
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark d-none d-md-flex">
                 <div className="collapse navbar-collapse justify-content-center" id="navbarNav">
                     <ul className="navbar-nav">
-                        <li className="nav-item active">
+                        <li className="nav-item">
                             <a onClick={()=> handleClick('Amsterdam')} className="nav-link" href="#">Amsterdam <span className="sr-only">(current)</span></a>
                         </li>
                         <li className="nav-item">

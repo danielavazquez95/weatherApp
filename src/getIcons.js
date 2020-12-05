@@ -3,35 +3,35 @@
     
     switch (weatherState) {
         case 'Thunderstorm':
-            return '/icons/thunder.svg';
+            return 'https://raw.githubusercontent.com/danielavazquez95/weatherApp/876b315a5e08da1b587de87455ded2f786bb7dd0/public/assets/thunder.svg';
         case 'Drizzle':
-            return '/icons/rainy-4.svg';
+            return 'https://raw.githubusercontent.com/danielavazquez95/weatherApp/876b315a5e08da1b587de87455ded2f786bb7dd0/public/assets/rainy-4.svg';
         case 'Rain':
-            return '/icons/rainy-5.svg';
+            return 'https://raw.githubusercontent.com/danielavazquez95/weatherApp/876b315a5e08da1b587de87455ded2f786bb7dd0/public/assets/rainy-5.svg';
         case 'Snow':
-            return '/icons/snowy-4.svg';
+            return 'https://raw.githubusercontent.com/danielavazquez95/weatherApp/4d4f57868caec5d58f03628fafddf7e223835c1f/public/assets/snowy-4.svg';
         case 'Mist':
-            return '/icons/cloudy.svg';
+            return 'https://raw.githubusercontent.com/danielavazquez95/weatherApp/876b315a5e08da1b587de87455ded2f786bb7dd0/public/assets/cloudy.svg';
         case 'Smoke':
-            return'/icons/cloudy.svg';
+            return'https://raw.githubusercontent.com/danielavazquez95/weatherApp/876b315a5e08da1b587de87455ded2f786bb7dd0/public/assets/cloudy.svg';
         case 'Haze':
-            return '/icons/cloudy.svg';
+            return 'https://raw.githubusercontent.com/danielavazquez95/weatherApp/876b315a5e08da1b587de87455ded2f786bb7dd0/public/assets/cloudy.svg';
         case 'Dust':
-            return '/icons/cloudy.svg';
+            return 'https://raw.githubusercontent.com/danielavazquez95/weatherApp/876b315a5e08da1b587de87455ded2f786bb7dd0/public/assets/cloudy.svg';
         case 'Fog':
-            return'/icons/cloudy.svg';
+            return'https://raw.githubusercontent.com/danielavazquez95/weatherApp/876b315a5e08da1b587de87455ded2f786bb7dd0/public/assets/cloudy.svg';
         case 'Sand':
-            return '/icons/cloudy.svg';
+            return 'https://raw.githubusercontent.com/danielavazquez95/weatherApp/876b315a5e08da1b587de87455ded2f786bb7dd0/public/assets/cloudy.svg';
         case 'Ash':
-            return '/icons/cloudy.svg';
+            return 'https://raw.githubusercontent.com/danielavazquez95/weatherApp/876b315a5e08da1b587de87455ded2f786bb7dd0/public/assets/cloudy.svg';
         case 'Squall':
-            return '/icons/cloudy.svg';
+            return 'https://raw.githubusercontent.com/danielavazquez95/weatherApp/876b315a5e08da1b587de87455ded2f786bb7dd0/public/assets/cloudy.svg';
         case 'Tornado':
-            return '/icons/cloudy.svg';
+            return 'https://raw.githubusercontent.com/danielavazquez95/weatherApp/876b315a5e08da1b587de87455ded2f786bb7dd0/public/assets/cloudy.svg';
         case 'Clear':
-            return '/icons/day.svg';
+            return 'https://raw.githubusercontent.com/danielavazquez95/weatherApp/4d4f57868caec5d58f03628fafddf7e223835c1f/public/assets/day.svg';
         case 'Clouds':
-            return '/icons/cloudy.svg';
+            return 'https://raw.githubusercontent.com/danielavazquez95/weatherApp/4d4f57868caec5d58f03628fafddf7e223835c1f/public/assets/cloudy.svg';
         default:
             return;
     }

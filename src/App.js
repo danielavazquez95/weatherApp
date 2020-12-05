@@ -16,7 +16,7 @@ export const App = () => {
 
   const apiWeather = () => {
       const apiKey = '7e47ac9a5e54fab20902167c0058fbe1';
-      const url = `http://api.openweathermap.org/data/2.5/forecast?q=${location}&appid=${apiKey}&units=metric`;
+      const url = `https://api.openweathermap.org/data/2.5/forecast?q=${location}&appid=${apiKey}&units=metric`;
       fetch(url)
         .then(response => response.json())
         .then(data => {

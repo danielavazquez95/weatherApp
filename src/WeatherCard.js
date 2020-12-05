@@ -5,7 +5,6 @@ import 'moment/locale/es';
 
 export const WeatherCard = ({data, temp}) => {
     moment.locale('es');
-    const today = temp[0];
     const minTempToday  = temp[0].main.temp_min;
     const todayLength = temp.length -1 ;
     const maxTempToday  = temp[todayLength].main.temp_max;

@@ -10,7 +10,7 @@ export const getMinTemp = (data) => {
 };
 
 export const getMaxTemp = (data) => {
-   let tempMax = data[0].main.temp_min;
+   let tempMax = data[0].main.temp_max;
    data.forEach(instance => {
       if(instance.main.temp_max > tempMax){
          tempMax = instance.main.temp_max

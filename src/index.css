@@ -85,7 +85,7 @@ body {
   margin: 10px 10px
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 460px) {
     .ico1{
       position: relative;
       width: 155px;

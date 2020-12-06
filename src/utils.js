@@ -1,22 +1,20 @@
 
+export const getMinTemp = (data) => {
+   let tempMin = data[0].main.temp_min;
+   data.forEach(instance => {
+      if(instance.main.temp_min < tempMin){
+         tempMin = instance.main.temp_min
+      }
+   })
+   return tempMin;
+};
 
-export  const parseData = (weather_data) => {
-   
-   const name = weather_data.city.name;
-   const {humidity, temp, temp_min, temp_max} = weather_data.list[0].main;
-   const {main} = weather_data.list[0].weather[0];
-   const {speed} = weather_data.list[0].wind;
-   
-   const data = { 
-      name,
-      humidity,
-      temp,
-      temp_max,
-      temp_min,
-      main,
-      wind: `${speed} m/s`
-   }
- 
-   return data;
- 
+export const getMaxTemp = (data) => {
+   let tempMax = data[0].main.temp_min;
+   data.forEach(instance => {
+      if(instance.main.temp_max > tempMax){
+         tempMax = instance.main.temp_max
+      }
+   })
+   return tempMax;
 };

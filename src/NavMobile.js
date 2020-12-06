@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 
-
 export const NavMobile = (props) => {
 
     const [sidebar, setSidebar] = useState(false);
@@ -21,7 +20,7 @@ export const NavMobile = (props) => {
             <nav className={sidebar ? 'nav-menu active bg-dark d-sm-block d-md-none' : 'nav-menu  bg-dark d-sm-block d-md-none'} onClick={showSidebar}>
                 <ul className="nav-menu-items" onClick={showSidebar}>
                     <li className="navbar-toggle bg-dark d-block">
-                        <a onClick={()=> handleClick('Amsterdam')} className="menu-bars nav-text"  href="#">Amsterdam <span className="sr-only">(current)</span></a>
+                        <a onClick={()=> handleClick('Amsterdam')} className="menu-bars nav-text" href="#">Amsterdam <span className="sr-only">(current)</span></a>
                         <a className="menu-bars nav-text" onClick={()=> handleClick('Barcelona')} href="#">Barcelona</a>
                         <a className="menu-bars nav-text" onClick={()=> handleClick('Bruselas')} href="#">Bruselas</a>
                         <a className="menu-bars nav-text" onClick={()=> handleClick('Buenos Aires')} href="#">Buenos Aires</a>

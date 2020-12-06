@@ -21,16 +21,16 @@ export const Nav = (props) => {
                             <a className="nav-link" onClick={()=> handleClick('Barcelona')} href="#">Barcelona</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" onClick={()=> handleClick('Bruselas')} href="#">Bruselas</a>
+                            <a className="nav-link" onClick={()=> handleClick('Brussels')} href="#">Brussels</a>
                         </li>
                         <li className="nav-item">
                             <a className="nav-link" onClick={()=> handleClick('Buenos Aires')} href="#">Buenos Aires</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" onClick={()=> handleClick('Paris')} href="#">Paris</a>
+                            <a className="nav-link" onClick={()=> handleClick('Londres')} href="#">London</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" onClick={()=> handleClick('Londres')} href="#">London</a>
+                            <a className="nav-link" onClick={()=> handleClick('Paris')} href="#">Paris</a>
                         </li>
                     </ul>
                 </div>

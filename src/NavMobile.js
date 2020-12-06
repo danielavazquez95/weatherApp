@@ -22,10 +22,10 @@ export const NavMobile = (props) => {
                     <li className="navbar-toggle bg-dark d-block">
                         <a onClick={()=> handleClick('Amsterdam')} className="menu-bars nav-text" href="#">Amsterdam <span className="sr-only">(current)</span></a>
                         <a className="menu-bars nav-text" onClick={()=> handleClick('Barcelona')} href="#">Barcelona</a>
-                        <a className="menu-bars nav-text" onClick={()=> handleClick('Bruselas')} href="#">Bruselas</a>
+                        <a className="menu-bars nav-text" onClick={()=> handleClick('Brussels')} href="#">Brussels</a>
                         <a className="menu-bars nav-text" onClick={()=> handleClick('Buenos Aires')} href="#">Buenos Aires</a>
-                        <a className="menu-bars nav-text" onClick={()=> handleClick('Paris')} href="#">Paris</a>
                         <a className="menu-bars nav-text" onClick={()=> handleClick('Londres')} href="#">London</a>
+                        <a className="menu-bars nav-text" onClick={()=> handleClick('Paris')} href="#">Paris</a>
                     </li>
                 </ul>
             </nav>
